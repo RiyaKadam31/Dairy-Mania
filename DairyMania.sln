@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DairyMania", "DairyMania.csproj", "{7388C49A-19F3-4BE9-B952-07DA74D0DEE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7388C49A-19F3-4BE9-B952-07DA74D0DEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7388C49A-19F3-4BE9-B952-07DA74D0DEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7388C49A-19F3-4BE9-B952-07DA74D0DEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7388C49A-19F3-4BE9-B952-07DA74D0DEE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9979CA8-83DB-4B7F-BF54-2A77268ADEAC}
+	EndGlobalSection
+EndGlobal
