@@ -1,0 +1,96 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 256px;
+    background-color: #808080;
+    color: white;
+    padding: 20px;
+    height: 800px;
+}
+
+    .sidebar h2 {
+        text-align: center;
+    }
+
+    .sidebar nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .sidebar nav ul li {
+            margin: 15px 0;
+        }
+
+            .sidebar nav ul li a {
+                color: white;
+                text-decoration: none;
+                text-size-adjust:50px;
+                
+            }
+
+                .sidebar nav ul li a:hover {
+                    text-decoration: underline;
+                }
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+    .user-info span {
+        margin-right: 15px;
+    }
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 2;
+    margin: 0 10px;
+}
+
+.recent-orders {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    table th {
+        background-color: #343a40;
+        color: white;
+    }

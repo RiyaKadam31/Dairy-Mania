@@ -1,0 +1,211 @@
+﻿/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color:dimgray;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+/* Header Styles */
+header {
+    color: #FFF8DC;
+    padding: 40px 10px;
+    text-align: center;
+    position: relative;
+    height: 100px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .logo:hover {
+        transform: scale(1.1) rotate(5deg);
+    }
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            display: block;
+            padding: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+            nav ul li a::before, nav ul li a::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: #ffd700;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            nav ul li a::before {
+                top: 0;
+                left: 0;
+                transform: scaleX(0);
+                transform-origin: top left;
+            }
+
+            nav ul li a::after {
+                bottom: 0;
+                right: 0;
+                transform: scaleX(0);
+                transform-origin: bottom right;
+            }
+
+            nav ul li a:hover::before {
+                transform: scaleX(1);
+                transform-origin: top right;
+            }
+
+            nav ul li a:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+
+            nav ul li a:hover {
+                color: #DCDCDC; /* Change text color on hover */
+                background-color: rgba(255, 255, 255, 0.1); /* Add a slight background color on hover */
+            }
+
+* Styling for form container */
+#form1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Styling for labels */
+#Usercount {
+    font-size: 24px; /* X-Large font size */
+    color: gold;
+}
+
+/* Styling for button */
+#show {
+    background-color: #333333;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    font-size: 18px; /* Medium font size */
+    height: 40px;
+    width: 100px;
+}
+
+/* Styling for gridview */
+#userdata {
+    border: 3px solid #999999;
+    background-color: #CCCCCC;
+    padding: 4px;
+    margin-right: 0px;
+    margin-left: 400px;
+    width: 400px;
+}
+
+    /* Styling for gridview headers */
+    #userdata th {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* Styling for gridview rows */
+    #userdata tr {
+        background-color: white;
+    }
+
+        /* Styling for selected row */
+        #userdata tr.selected {
+            background-color: #000099;
+            color: white;
+        }
+
+    /* Styling for sorted cells */
+    #userdata .sortedAscendingCell {
+        background-color: #F1F1F1;
+    }
+
+    #userdata .sortedDescendingCell {
+        background-color: #CAC9C9;
+    }
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #778899;
+    color: #FFF8DC;
+    padding: 0px 0;
+    text-align: center;
+}
+
+    footer ul {
+        list-style-type: none;
+    }
+
+        footer ul li {
+            display: inline-block;
+            margin-right: 10px;
+            color: #000000; /* Change the color to black */
+        }
+
+            footer ul li a {
+                text-decoration: none;
+                color: #FFF8DC; /* Change the link color to black */
+                font-weight: bold;
+            }
+
+                footer ul li a:hover {
+                    color: #00FF7F;
+                }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+
+    .dropdown {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li:hover .dropdown {
+        display: none;
+    }
+}
